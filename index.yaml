@@ -1,0 +1,6 @@
+schemaVersion: 1
+type: coderef
+title: dotnet-fluent-architecture
+docsRoot: docs
+reposRoot: repos
+...

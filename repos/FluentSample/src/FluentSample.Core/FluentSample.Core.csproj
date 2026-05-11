@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <RootNamespace>FluentSample.Core</RootNamespace>
+        <Description>FluentSample shared library - core business logic, data access and domain services</Description>
+        <IsPublishable>false</IsPublishable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+            <_Parameter1>FluentSample.Core.Tests</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Refit.HttpClientFactory"/>
+        <PackageReference Include="Microsoft.Extensions.Http.Polly"/>
+        <PackageReference Include="Volo.Abp.Autofac"/>
+        <PackageReference Include="Volo.Abp.Core"/>
+        <PackageReference Include="Volo.Abp.Ddd.Domain"/>
+        <PackageReference Include="Volo.Abp.Ddd.Application.Contracts"/>
+        <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite"/>
+        <PackageReference Include="System.Reactive"/>
+        <PackageReference Include="ReactiveUI"/>
+        <PackageReference Include="Serilog"/>
+        <PackageReference Include="Serilog.Sinks.File"/>
+        <PackageReference Include="Serilog.Extensions.Logging"/>
+    </ItemGroup>
+
+</Project>

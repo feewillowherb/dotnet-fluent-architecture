@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <RootNamespace>FluentSample.App</RootNamespace>
+        <Description>FluentSample - AI-engineered .NET architecture reference application</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+        <PackageReference Include="Volo.Abp.Autofac" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\FluentSample.Core\FluentSample.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="appsettings.json" Condition="Exists('appsettings.json')">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>
